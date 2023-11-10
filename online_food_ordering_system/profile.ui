@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>profile</class>
+ <widget class="QMainWindow" name="profile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>598</width>
+    <height>424</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>461</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page_profile">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Name :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Mobile no :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>121</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Address :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4_name">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+	background-color : rgb(40,40,40);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5_mobile">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>120</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+	background-color : rgb(40,40,40);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_address">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>200</y>
+        <width>231</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+	background-color : rgb(40,40,40);
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2_update_page">
+     <widget class="QLineEdit" name="lineEdit_3_name">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	font: 09pt &quot;Franklin Gothic Heavy&quot;;
+	color:white;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+	background-color : rgb(40,40,40);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4_mobile">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	font: 09pt &quot;Franklin Gothic Heavy&quot;;
+	color:white;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+	background-color : rgb(40,40,40);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Mobile</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5_password">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	font: 09pt &quot;Franklin Gothic Heavy&quot;;
+	color:white;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+	background-color : rgb(40,40,40);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_2_address">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>190</y>
+        <width>261</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit{
+	font: 09pt &quot;Franklin Gothic Heavy&quot;;
+	color:white;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+	background-color : rgb(40,40,40);
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Address</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4_confirm_in_update">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>280</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 12pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:10px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:14pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3_history">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>10</y>
+        <width>281</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>279</width>
+         <height>339</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_profile">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:10px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:14pt;
+color:red;
+border-color: orange;
+}</string>
+    </property>
+    <property name="text">
+     <string>profile</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_update_profile">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>170</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 11pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:10px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:13pt;
+color:red;
+border-color: orange;
+}</string>
+    </property>
+    <property name="text">
+     <string>update profile</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3_return">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:10px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:18pt;
+color:red;
+border-color: orange;
+}</string>
+    </property>
+    <property name="text">
+     <string>return</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>598</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

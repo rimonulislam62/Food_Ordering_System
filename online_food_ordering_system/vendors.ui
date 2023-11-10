@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>vendors</class>
+ <widget class="QMainWindow" name="vendors">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color: rgb(65, 65, 65);}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>483</width>
+      <height>512</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(48, 48, 48);</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="pushButton_add_Food">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>230</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 20pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:25pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Add Food Item</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2_remove_food">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>320</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 20pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:25pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Remove Food Item</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>481</width>
+        <height>507</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resource.qrc">:/resource/resources/03.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>291</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+font: 30pt &quot;Countryside two&quot;;
+color:orange;
+background-color:black;
+border-radius:30px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Welcome</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_logout_in_page1">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>0</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:18pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Log out</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_vendor_profile">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>0</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside two&quot;;
+	border:3px dashed white;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:18pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Profile</string>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>pushButton_add_Food</zorder>
+     <zorder>pushButton_2_remove_food</zorder>
+     <zorder>label_2</zorder>
+     <zorder>pushButton_logout_in_page1</zorder>
+     <zorder>pushButton_vendor_profile</zorder>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLineEdit" name="lineEdit_title">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Food_title</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3_price">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>350</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>price</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_add_food">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>392</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 20pt &quot;Countryside two&quot;;
+	border:3px dashed orange;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:25pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_description">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>DESCRIPTION</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_add_photo_in_addfood">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>170</y>
+        <width>171</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:orange;
+	background-color:transparent;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_add_photo">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>330</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 12pt &quot;Countryside two&quot;;
+	border:3px dashed orange;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:12pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>Add Photo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>483</width>
+        <height>512</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resource.qrc">:/resource/resources/01(04)1.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_return_button_in_page2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 12pt &quot;Countryside two&quot;;
+	border:3px dashed orange;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:15pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>return</string>
+      </property>
+     </widget>
+     <zorder>label_3</zorder>
+     <zorder>lineEdit_title</zorder>
+     <zorder>lineEdit_3_price</zorder>
+     <zorder>pushButton_add_food</zorder>
+     <zorder>textEdit_description</zorder>
+     <zorder>label_add_photo_in_addfood</zorder>
+     <zorder>pushButton_add_photo</zorder>
+     <zorder>pushButton_return_button_in_page2</zorder>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>241</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_food_details">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>241</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	font: 18pt &quot;Countryside two&quot;;
+	color:orange;
+	background-color:transparent;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>Food Details</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2_pic">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>241</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	font: 18pt &quot;Countryside two&quot;;
+	color:orange;
+	background-color:transparent;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3_name">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>230</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	font: 18pt &quot;Countryside two&quot;;
+	color:orange;
+	background-color:transparent;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_remove_food">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>380</y>
+         <width>241</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 20pt &quot;Countryside two&quot;;
+	border:3px dashed orange;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:25pt;
+color:red;
+border-color: orange;
+}</string>
+       </property>
+       <property name="text">
+        <string>remove food</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_description_in_page3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>270</y>
+         <width>241</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 1px;
+    border-color: orange;
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_return_button_in_page3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 12pt &quot;Countryside two&quot;;
+	border:3px dashed orange;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:15pt;
+color:red;
+border-color: orange;
+}</string>
+      </property>
+      <property name="text">
+       <string>return</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>483</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

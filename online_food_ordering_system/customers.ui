@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>customers</class>
+ <widget class="QMainWindow" name="customers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color: rgb(56, 56, 56);}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background-color: rgb(40, 40, 40);}</string>
+   </property>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>238</width>
+      <height>425</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>236</width>
+       <height>423</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>40</y>
+      <width>238</width>
+      <height>425</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame:{
+background-color:orange;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_frame_name">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>236</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	font: 18pt &quot;Countryside two&quot;;
+	color:orange;
+	background-color:transparent;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>Food Details</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::MarkdownText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2_pic">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>236</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:orange;
+background:transparent;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3_Food_name">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>236</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	font: 18pt &quot;Countryside two&quot;;
+	color:orange;
+	background-color:transparent;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_order_place">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>380</y>
+       <width>236</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	font: 18pt &quot;Countryside two&quot;;
+	color:orange;
+	background-color:transparent;
+	border: 1px solid orange;
+}
+QPushButton:hover{
+font: 20pt;
+color:yellow;
+}</string>
+     </property>
+     <property name="text">
+      <string>Place Order!</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_in_customer_page">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>270</y>
+       <width>236</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 1px;
+    border-color: orange;
+}</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_log_out">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>2</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 12pt &quot;Countryside two&quot;;
+	border:2px dashed orange;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:15pt;
+color:red;
+border-color: orange;
+}</string>
+    </property>
+    <property name="text">
+     <string>log out</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_profile">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>2</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 10pt &quot;Countryside two&quot;;
+	border:2px dashed orange;
+	border-radius:30px;
+	background-color:#231f1f;
+	color:white;
+}
+QPushButton:hover{
+font:13pt;
+color:red;
+border-color: orange;
+}</string>
+    </property>
+    <property name="text">
+     <string>Profile</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>483</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

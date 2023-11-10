@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login_signup_window</class>
+ <widget class="QMainWindow" name="login_signup_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color:gray;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background-color:black;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_login">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QLineEdit" name="lineEdit_login_mobile">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>120</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color:white;
+border:3px dashed white;
+border-radius:20px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>   Enter Your Mobile Number</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_2_login_password">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>190</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color:white;
+border:3px dashed white;
+border-radius:20px;
+}</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>              Password</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2_login">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>240</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside two&quot;;
+	color:orange;
+	background:transparent;
+}
+QPushButton:hover{
+	font:20pt;
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Login</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3_signup_in_login">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>320</y>
+          <width>221</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside two&quot;;
+	color:orange;
+	background:transparent;
+}
+QPushButton:hover{
+ font:20pt;
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Create Account</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_background_image_in_login">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>470</width>
+          <height>505</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resource.qrc">:/resource/resources/24060914 (1).jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>261</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	font: 24pt &quot;Countryside two&quot;;
+	color:white;
+	background-color:transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string>Log In</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_return_in_login">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside&quot;;
+	color:orange;
+	background:black;
+	border-radius:15px ; 
+}
+QPushButton:hover{
+	font:20pt;
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>return</string>
+        </property>
+       </widget>
+       <zorder>label_background_image_in_login</zorder>
+       <zorder>lineEdit_login_mobile</zorder>
+       <zorder>lineEdit_2_login_password</zorder>
+       <zorder>pushButton_2_login</zorder>
+       <zorder>pushButton_3_signup_in_login</zorder>
+       <zorder>label_2</zorder>
+       <zorder>pushButton_return_in_login</zorder>
+      </widget>
+      <widget class="QWidget" name="page_2_signup">
+       <widget class="QLineEdit" name="lineEdit_name">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>120</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_2_mobile">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>190</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter Your Mobile Number</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_signup_in_signup">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>360</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside two&quot;;
+	color:orange;
+	background:#231f1f;
+	border-radius:20px solid white;
+}
+QPushButton:hover{
+	font:20pt;
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Sign Up</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_3_password">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>260</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Password</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_4_address">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>320</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font: 10pt &quot;Franklin Gothic Heavy&quot;;
+	color:orange;
+	border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>470</width>
+          <height>507</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resource.qrc">:/resource/resources/01(03)_signup.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_return_in_signup">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	font: 15pt &quot;Countryside&quot;;
+	color:orange;
+	background:black;
+	border-radius:15px ; 
+}
+QPushButton:hover{
+	font:20pt;
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>return</string>
+        </property>
+       </widget>
+       <zorder>label_3</zorder>
+       <zorder>lineEdit_name</zorder>
+       <zorder>lineEdit_2_mobile</zorder>
+       <zorder>pushButton_signup_in_signup</zorder>
+       <zorder>lineEdit_3_password</zorder>
+       <zorder>lineEdit_4_address</zorder>
+       <zorder>pushButton_return_in_signup</zorder>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>483</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
